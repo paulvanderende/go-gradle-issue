@@ -1,0 +1,14 @@
+plugins {
+    id 'com.github.blindpirate.gogradle' version '0.10'
+}
+
+golang {
+    packagePath = 'github.com/paulvanderende/go-gradle-issue' 
+}
+
+dependencies {
+    golang {
+        build(['name': 'gopkg.in/yaml.v2'])
+    }
+}
+
