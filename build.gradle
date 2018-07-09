@@ -12,3 +12,6 @@ dependencies {
     }
 }
 
+build {
+    go 'build -o build/output/test cmd/test/main.go'
+}
